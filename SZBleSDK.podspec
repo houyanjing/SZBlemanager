@@ -89,8 +89,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SZBlemanager/SZBleSDK.framework/Headers/*.{h}"
-  s.exclude_files = "SZBlemanager/SZBleSDK.framework"
+  s.source_files  = "SZBleSDK.framework/Headers/*.{h}"
+  s.exclude_files = "SZBleSDK.framework"
 
   # s.public_header_files = ""
 
@@ -116,7 +116,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "UIKit", "CFNetwork", "Security", "SystemConfiguration", "ExternalAccessory", "AudioToolbox", "ImageIO", "CoreTelephony", "Foundation", "CoreGraphics", "QuartzCore", "CoreLocation", "CoreBluetooth"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
