@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "/SZBleSDK.framework/Headers/*.{h}"
+  s.source_files  = "/SZBleSDK.framework/Headers/*.{h,m}"
   s.exclude_files = "https://github.com/houyanjing/SZBlemanager/SZBleSDK.framework"
 
   # s.public_header_files = ""
