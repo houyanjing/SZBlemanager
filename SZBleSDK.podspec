@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "/SZBleSDK.framework/Headers/*.{h,m}"
+  s.source_files  = "SZBleSDK.framework/Headers/*.{h,m}"
   s.exclude_files = "https://github.com/houyanjing/SZBlemanager/SZBleSDK.framework"
 
   # s.public_header_files = ""
@@ -116,8 +116,8 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = "UIKit", "CFNetwork", "Security", "SystemConfiguration", "ExternalAccessory", "AudioToolbox", "ImageIO", "CoreTelephony", "Foundation", "CoreGraphics", "QuartzCore", "CoreLocation", "CoreBluetooth"
-
+  s.frameworks = "UIKit","Foundation",  "CoreBluetooth"
+#"CoreGraphics", "QuartzCore", "CoreLocation", "CFNetwork", "Security", "SystemConfiguration", "ExternalAccessory", "AudioToolbox", "ImageIO", "CoreTelephony",
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
@@ -130,7 +130,7 @@ Pod::Spec.new do |s|
 
   # s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
   # s.dependency "JSONKit", "~> 1.4"
 
 end

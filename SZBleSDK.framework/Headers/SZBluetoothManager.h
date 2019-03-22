@@ -16,6 +16,7 @@
 
 -(void)BLEListOpenDoor:(NSDictionary *)dic;
 
+-(void)aboutOpenDoorHistory:(NSString *)str;
 
 @end
 
@@ -36,12 +37,16 @@
 - (void)aboutKeyList:(NSArray *)arr;
 
 -(void)opendoor:(NSDictionary *)dic;
+//开门记录
+-(void)opendoorHistory:(NSString *)str;
 //蓝牙列表开门 所搜索到的蓝牙设备
 -(void)aboutBLEListOpenDoor:(NSDictionary *)dic;
 //通过选中列表值开门
--(void)aboutBLEListPer:(NSString *)str;
+-(void)aboutBLEListPer:(NSString *)str andUpload:(BOOL)isUpload;
 //自动开锁开关
 -(void)lockSwitch:(BOOL)isTrue;
+//uploadDeviceTimeWithName:
+-(void)uploadDeviceTimeWithName:(NSDictionary *)device_name;
 
 -(BOOL)szsaveUserPlot_id:(NSString *)plot_id;
 
